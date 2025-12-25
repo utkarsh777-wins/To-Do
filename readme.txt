@@ -8,3 +8,5 @@ git checkout <branch-name>
 the manual way to get things done
 git push -u origin feature-login
 --use this to push-the-branch to github --for first-timers only
+sighs stilll didn't get the hang of this
+will try this again
