@@ -1,0 +1,3 @@
+CheckIt: A Minimalist To-Do App I built this To-Do application to explore the power of Vanilla JavaScript. It’s a lightweight tool designed for users who want to organize their day without the clutter of complex apps.
+
+What it does: ✅ Create tasks with a tap or a keystroke. ✏️ Edit tasks instantly. ✔️ Check off completed items. 🗑️ Delete tasks when they're no longer needed.
