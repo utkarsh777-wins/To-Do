@@ -23,9 +23,15 @@ body {
 
 /* Animated gradient background */
 @keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Floating particles effect */
@@ -36,10 +42,21 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 40% 20%,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    );
   background-size: 200px 200px, 300px 300px, 250px 250px;
   animation: particleFloat 20s linear infinite;
   pointer-events: none;
@@ -47,8 +64,12 @@ body::before {
 }
 
 @keyframes particleFloat {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-100px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
 }
 
 /* Container for main content */
@@ -77,8 +98,13 @@ h1 {
 }
 
 @keyframes titlePulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.02); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
 }
 
 p {
@@ -121,8 +147,7 @@ p {
 #todo-input:focus {
   border-color: rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 1);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15),
-              0 0 0 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 0 0 4px rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
 }
 
@@ -149,7 +174,12 @@ p {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: left 0.5s;
 }
 
@@ -181,7 +211,7 @@ p {
   border-radius: 20px;
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
-              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 /* Custom scrollbar */
@@ -281,8 +311,13 @@ p {
 }
 
 @keyframes checkBounce {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 /* Todo Text */
@@ -366,33 +401,33 @@ p {
   body {
     padding-top: 40px;
   }
-  
+
   h1 {
     font-size: 2.2rem;
   }
-  
+
   p {
     font-size: 0.95rem;
   }
-  
+
   .input-container {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   #todo-input {
     width: 280px;
   }
-  
+
   #add-btn {
     width: 280px;
   }
-  
+
   #todo-list {
     width: 300px;
     max-height: 400px;
   }
-  
+
   #todo-list li {
     padding: 14px 16px;
   }
